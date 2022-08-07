@@ -1,0 +1,16 @@
+name: 'Greeting thing test'
+description: 'Greet someone with parameter'
+
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: 'world'
+
+outputs: 
+  time: #id of input
+    description: 'The time we greeted you'
+
+runs:
+  using: 'node12'
+  main: index.js
